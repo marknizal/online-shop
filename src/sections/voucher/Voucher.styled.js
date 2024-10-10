@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpoints, padding } from "../../theme/theme";
+import { breakpoints, colors, padding } from "../../theme/theme";
 
 export const Wrapper = styled.section`
   padding: ${padding.default};
@@ -9,7 +9,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid navy;
+  border: 2px solid ${colors.navy};
   border-radius: 1.2rem;
   padding: 4rem;
   gap: 1rem;

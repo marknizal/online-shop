@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpoints, padding } from "../../theme/theme";
+import { breakpoints, colors, padding } from "../../theme/theme";
 
 export const Wrapper = styled.section`
   padding: ${padding.bottom};
@@ -20,7 +20,7 @@ export const BannerContent = styled.div`
   }
 
   .buttonBanner {
-    background-color: navy;
+    background-color: ${colors.navy};
   }
 
   ${breakpoints.TABLET} {
