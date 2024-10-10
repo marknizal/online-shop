@@ -10,4 +10,5 @@ export const colors = {
   black: "#000000",
   dark: "#212121",
   link: "#2a9df4",
+  blue: "#1DA1F2",
 };

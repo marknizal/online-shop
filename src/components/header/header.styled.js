@@ -1,25 +1,30 @@
 import styled from "styled-components";
 import { breakpoints, colors } from "../../theme/theme";
 
+const filterProps = (prop) => prop !== "isOpen" && prop !== "delay";
+
 export const Wrapper = styled.div`
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: ${colors.white};
   top: 0;
   z-index: 1000;
-  box-shadow: 0 10px 15px -5px hsla(0, 0%, 0%, 0.05);
+
+  ${breakpoints.MOBILE} {
+    box-shadow: 0 10px 15px -5px hsla(0, 0%, 0%, 0.05);
+  }
 `;
 
 export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
+  max-width: 1380px;
   margin: auto;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 2rem;
 
   ${breakpoints.MOBILE} {
-    padding: 1.4rem 2rem;
+    padding: 1.2rem 2rem;
   }
 `;
 
@@ -37,7 +42,9 @@ export const Logo = styled.div`
   }
 `;
 
-export const NavLinks = styled.ul`
+export const NavLinks = styled.ul.withConfig({
+  shouldForwardProp: filterProps,
+})`
   padding: 0;
   display: flex;
   gap: 1.6rem;
@@ -62,7 +69,7 @@ export const NavLinks = styled.ul`
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: ${colors.white};
     width: 100%;
     padding: 10rem 0;
     height: 100vh;
@@ -86,7 +93,9 @@ export const NavLinks = styled.ul`
   }
 `;
 
-export const Hamburger = styled.div`
+export const Hamburger = styled.div.withConfig({
+  shouldForwardProp: filterProps,
+})`
   display: none;
   flex-direction: column;
   cursor: pointer;
