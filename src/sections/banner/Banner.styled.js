@@ -10,7 +10,7 @@ export const BannerContent = styled.div`
   display: flex;
   align-items: center;
   padding: 4rem;
-  background: url("./banner.png") no-repeat center center / cover;
+  background: url("../../assets/banner.png") no-repeat center center / cover;
   border-radius: 1.2rem;
   height: 70vh;
 

@@ -12,19 +12,19 @@ import {
 const Category = () => {
   const items = [
     {
-      imgSrc: "./category1.png",
+      imgSrc: "../../assets/category1.png",
       alt: "Clothing model",
     },
     {
-      imgSrc: "./category2.png",
+      imgSrc: "../../assets/category2.png",
       alt: "Sporty woman",
     },
     {
-      imgSrc: "./category3.png",
+      imgSrc: "../../assets/category3.png",
       alt: "Fashion model",
     },
     {
-      imgSrc: "./category4.png",
+      imgSrc: "../../assets/category4.png",
       alt: "Casual man",
     },
   ];

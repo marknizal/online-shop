@@ -17,7 +17,7 @@ const Reviews = () => {
     {
       name: "Billy Joe",
       profession: "Photographer",
-      picture: "./default-profile.png",
+      picture: "../../assets/default-profile.png",
       rating: 5,
       comment:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
@@ -25,7 +25,7 @@ const Reviews = () => {
     {
       name: "John Mark",
       profession: "Developer",
-      picture: "./default-profile.png",
+      picture: "../../assets/default-profile.png",
       rating: 4,
       comment:
         "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
