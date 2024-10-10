@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   background-color: white;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 10px 15px -5px hsla(0, 0%, 0%, 0.05);
 `;
 
 export const HeaderContent = styled.div`
@@ -15,7 +16,7 @@ export const HeaderContent = styled.div`
   align-items: center;
   max-width: 1280px;
   margin: auto;
-  padding: 0.6rem 2rem;
+  padding: 0.8rem 2rem;
 
   ${breakpoints.MOBILE} {
     padding: 1.4rem 2rem;
@@ -96,8 +97,8 @@ export const Hamburger = styled.div`
   span {
     height: 2px;
     width: 25px;
-    background: ${({ isOpen }) => (isOpen ? "black" : "black")};
-    transition: transform 0.4s ease, background-color 0.4s ease;
+    background: black;
+    transition: transform 0.4s ease;
   }
 
   span:nth-of-type(1) {

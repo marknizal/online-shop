@@ -30,13 +30,13 @@ const Header = () => {
         </Logo>
 
         <Hamburger isOpen={isOpen} onClick={toggleMenu}>
-          <span isOpen={isOpen} />
-          <span isOpen={isOpen} />
+          <span />
+          <span />
         </Hamburger>
 
         <NavLinks isOpen={isOpen}>
           {navLinks.map((link, index) => (
-            <li key={index} delay={index * 0.1}>
+            <li key={index}>
               <a href={link.path}>{link.name}</a>
             </li>
           ))}
