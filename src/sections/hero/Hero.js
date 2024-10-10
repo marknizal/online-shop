@@ -8,7 +8,9 @@ const Hero = () => {
       <Container>
         <HeroContent>
           <Title>10% OFF on everything</Title>
-          <SubTitle>Your subtitle here</SubTitle>
+          <SubTitle>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit
+          </SubTitle>
           <Button aria-label="Shop Now">Shop Now</Button>
         </HeroContent>
       </Container>

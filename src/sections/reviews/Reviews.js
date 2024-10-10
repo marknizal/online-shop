@@ -17,8 +17,7 @@ const Reviews = () => {
     {
       name: "Billy Joe",
       profession: "Photographer",
-      picture:
-        "https://pics.craiyon.com/2023-11-26/oMNPpACzTtO5OVERUZwh3Q.webp",
+      picture: "./default-profile.png",
       rating: 5,
       comment:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
@@ -26,8 +25,7 @@ const Reviews = () => {
     {
       name: "John Mark",
       profession: "Developer",
-      picture:
-        "https://pics.craiyon.com/2023-11-26/oMNPpACzTtO5OVERUZwh3Q.webp",
+      picture: "./default-profile.png",
       rating: 4,
       comment:
         "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
@@ -51,7 +49,7 @@ const Reviews = () => {
               <Comment>
                 <Rating>
                   {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} active={i < review.rating} />
+                    <StarIcon key={i} data-active={i < review.rating} />
                   ))}
                 </Rating>
                 <p>{review.comment}</p>

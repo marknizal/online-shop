@@ -35,7 +35,7 @@ export const Item = styled.li`
 
   ${breakpoints.MOBILE} {
     padding: 2rem 1.4rem;
-    gap: 1.4rem;
+    gap: 1rem;
   }
 `;
 
@@ -109,5 +109,5 @@ export const Rating = styled.div`
 
 export const StarIcon = styled(FaStar)`
   font-size: 1.2rem;
-  color: ${(props) => (props.active ? "orange" : "lightgray")};
+  color: ${(props) => (props["data-active"] ? "orange" : "lightgray")};
 `;

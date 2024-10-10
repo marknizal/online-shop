@@ -12,6 +12,7 @@ export const colors = {
   link: "#2a9df4",
   blue: "#1DA1F2",
   navy: "#000080",
+  footer: "#152238",
 };
 
 export const padding = {

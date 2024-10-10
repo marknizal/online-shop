@@ -21,6 +21,7 @@ export const BannerContent = styled.div`
 
   .buttonBanner {
     background-color: ${colors.navy};
+    align-self: flex-start;
   }
 
   ${breakpoints.TABLET} {
@@ -35,8 +36,7 @@ export const BannerContent = styled.div`
     }
 
     .buttonBanner {
-      align-self: self-start;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     &::after {
@@ -65,10 +65,6 @@ export const BannerContent = styled.div`
     h3 {
       font-size: 2rem;
       color: white;
-    }
-
-    .buttonBanner {
-      align-self: self-start;
     }
 
     &::after {

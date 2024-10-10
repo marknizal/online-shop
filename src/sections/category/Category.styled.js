@@ -51,7 +51,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   background-color: #212121;
   color: white;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 0.3rem;
   cursor: pointer;
 `;
