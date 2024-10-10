@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { breakpoints } from "../../theme/theme";
+import { breakpoints, padding } from "../../theme/theme";
 
 export const Wrapper = styled.section`
-  padding: 4rem 0;
+  padding: ${padding.default};
   background-color: #f6f6f6;
 `;
 
@@ -51,7 +51,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   background-color: #212121;
   color: white;
-  padding: 1rem;
+  padding: 1rem 3rem;
   border-radius: 0.3rem;
   cursor: pointer;
 `;

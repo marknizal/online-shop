@@ -9,10 +9,7 @@ export const Wrapper = styled.div`
   background-color: ${colors.white};
   top: 0;
   z-index: 1000;
-
-  ${breakpoints.MOBILE} {
-    box-shadow: 0 10px 15px -5px hsla(0, 0%, 0%, 0.05);
-  }
+  box-shadow: 0 10px 15px -5px hsla(0, 0%, 0%, 0.05);
 `;
 
 export const HeaderContent = styled.div`

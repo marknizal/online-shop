@@ -12,3 +12,8 @@ export const colors = {
   link: "#2a9df4",
   blue: "#1DA1F2",
 };
+
+export const padding = {
+  default: "4rem 0",
+  bottom: "0 0 4rem",
+};
