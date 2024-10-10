@@ -10,6 +10,7 @@ export const CategoryList = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0;
+  margin: 0;
   gap: 1.4rem;
 
   ${breakpoints.TABLET} {
