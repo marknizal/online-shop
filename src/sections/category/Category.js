@@ -8,23 +8,27 @@ import {
   StyledImage,
   Button,
 } from "./Category.styled";
+import category1 from "../../assets/category1.png";
+import category2 from "../../assets/category2.png";
+import category3 from "../../assets/category3.png";
+import category4 from "../../assets/category4.png";
 
 const Category = () => {
   const items = [
     {
-      imgSrc: "../../assets/category1.png",
+      imgSrc: category1,
       alt: "Clothing model",
     },
     {
-      imgSrc: "../../assets/category2.png",
+      imgSrc: category2,
       alt: "Sporty woman",
     },
     {
-      imgSrc: "../../assets/category3.png",
+      imgSrc: category3,
       alt: "Fashion model",
     },
     {
-      imgSrc: "../../assets/category4.png",
+      imgSrc: category4,
       alt: "Casual man",
     },
   ];

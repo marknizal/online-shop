@@ -26,7 +26,7 @@ const Header = () => {
     <Wrapper>
       <HeaderContent>
         <Logo>
-          <img src="./logo.png" alt="logo" />
+          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" />
         </Logo>
 
         <Hamburger isOpen={isOpen} onClick={toggleMenu}>

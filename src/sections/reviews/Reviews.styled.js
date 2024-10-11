@@ -1,9 +1,9 @@
 import { FaStar } from "react-icons/fa";
 import styled from "styled-components";
-import { breakpoints, colors, padding } from "../../theme/theme";
+import { breakpoints, colors } from "../../theme/theme";
 
 export const Wrapper = styled.section`
-  padding: ${padding.bottom};
+  padding: 0 0 6rem;
 `;
 
 export const HeadingTitle = styled.h1`

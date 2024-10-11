@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { breakpoints, colors } from "../../theme/theme";
+import heroImg from "../../assets/hero.png";
 
 export const Wrapper = styled.section`
   height: 100vh;
-  background: url("https://images.ctfassets.net/69ywg46tbhs3/2dqfSRoGoDBuytrsbhgxdN/9c07dace1811ff748ad4619923f33a93/shopping-homepage-sqaure-img-_1__.jpg?w=1116&h=768&fit=scale&q=100&fm=webp")
-    no-repeat center center / cover;
+  background: url(${heroImg}) no-repeat center center / cover;
   display: flex;
   justify-content: center;
   align-items: center;

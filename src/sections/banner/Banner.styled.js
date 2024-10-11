@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakpoints, colors, padding } from "../../theme/theme";
+import bannerImg from "../../assets/banner.png";
 
 export const Wrapper = styled.section`
   padding: ${padding.bottom};
@@ -10,7 +11,7 @@ export const BannerContent = styled.div`
   display: flex;
   align-items: center;
   padding: 4rem;
-  background: url("../../assets/banner.png") no-repeat center center / cover;
+  background: url(${bannerImg}) no-repeat center center / cover;
   border-radius: 1.2rem;
   height: 70vh;
 
