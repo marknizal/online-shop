@@ -54,5 +54,6 @@ export const Socials = styled.ul`
 
   svg {
     font-size: 1.4rem;
+    color: ${colors.white};
   }
 `;

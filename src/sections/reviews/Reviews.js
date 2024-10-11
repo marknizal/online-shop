@@ -11,14 +11,15 @@ import {
   Rating,
   StarIcon,
 } from "./Reviews.styled";
-import picture from "../../assets/default-profile.png";
+import profile1 from "../../assets/profile.png";
+import profile2 from "../../assets/profile2.png";
 
 const Reviews = () => {
   const reviews = [
     {
       name: "Billy Joe",
       profession: "Photographer",
-      picture: picture,
+      picture: profile1,
       rating: 5,
       comment:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
@@ -26,7 +27,7 @@ const Reviews = () => {
     {
       name: "John Mark",
       profession: "Developer",
-      picture: picture,
+      picture: profile2,
       rating: 4,
       comment:
         "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",

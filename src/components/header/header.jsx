@@ -1,19 +1,5 @@
 import React, { useState } from "react";
-import {
-  Wrapper,
-  HeaderContent,
-  Logo,
-  Hamburger,
-  NavLinks,
-} from "./header.styled";
-
-const navLinks = [
-  { name: "Home", path: "/" },
-  { name: "Category", path: "/category" },
-  { name: "About", path: "/about" },
-  { name: "Reviews", path: "/reviews" },
-  { name: "Contacts", path: "/contacts" },
-];
+import { Nav, Logo, Hamburger, Menu, MenuLink } from "./header.styled";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,27 +8,31 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "Category", path: "/category" },
+    { name: "About", path: "/about" },
+    { name: "Reviews", path: "/reviews" },
+    { name: "Contacts", path: "/contacts" },
+  ];
+
   return (
-    <Wrapper>
-      <HeaderContent>
-        <Logo>
-          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" />
-        </Logo>
+    <Nav>
+      <Logo href="/">MyLogo</Logo>
 
-        <Hamburger isOpen={isOpen} onClick={toggleMenu}>
-          <span />
-          <span />
-        </Hamburger>
+      <Hamburger aria-label="Toggle menu" onClick={toggleMenu} $isOpen={isOpen}>
+        <span />
+        <span />
+      </Hamburger>
 
-        <NavLinks isOpen={isOpen}>
-          {navLinks.map((link, index) => (
-            <li key={index}>
-              <a href={link.path}>{link.name}</a>
-            </li>
-          ))}
-        </NavLinks>
-      </HeaderContent>
-    </Wrapper>
+      <Menu $isOpen={isOpen}>
+        {menuItems.map((item, index) => (
+          <MenuLink key={index} href={item.path} onClick={toggleMenu}>
+            {item.name}
+          </MenuLink>
+        ))}
+      </Menu>
+    </Nav>
   );
 };
 
