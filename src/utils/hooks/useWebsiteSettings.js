@@ -4,7 +4,6 @@ const QUERY = gql`
   query websiteSettings {
     websiteSettings(first: 1000) {
       id
-      fieldKey
       imgValue {
         url
       }
@@ -20,12 +19,9 @@ const useWebsiteSettings = () => {
   const { data, loading, error } = useQuery(QUERY);
 
   return {
-    getSettings: (fieldKey) => {
-      const field = data?.websiteSettings.find(
-        (setting) => setting.fieldKey === fieldKey
-      );
-
-      return field?.renderValue?.html || field?.imgValue?.url || fieldKey;
+    getSettings: (id) => {
+      const field = data?.websiteSettings.find((setting) => setting.id === id);
+      return field?.renderValue?.html || field?.imgValue?.url || id;
     },
     loading,
     error,

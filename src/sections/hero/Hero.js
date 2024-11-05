@@ -13,9 +13,15 @@ const Hero = () => {
     <Wrapper>
       <Container>
         <HeroContent>
-          <Title dangerouslySetInnerHTML={{ __html: getSettings("title") }} />
+          <Title
+            dangerouslySetInnerHTML={{
+              __html: getSettings("cm2wkcbw76kog07mtybnfh0b7"),
+            }}
+          />
           <SubTitle
-            dangerouslySetInnerHTML={{ __html: getSettings("description") }}
+            dangerouslySetInnerHTML={{
+              __html: getSettings("cm2wk0b7d6j0307mtw7ld9rvr"),
+            }}
           />
           <Button aria-label="Shop Now">Shop Now</Button>
         </HeroContent>
